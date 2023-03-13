@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
     <meta http-equiv="Content-Type" content="text/html">    
     <title>Chatroom</title>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
@@ -20,8 +20,9 @@
             color: white;
             padding: 20px;
             display: flex;
-            justify-content: space-between;
+            /*justify-content: space-between;*/
             align-items: center;
+            max-width: 100%;
         }
 
         .logout-button { 
@@ -31,11 +32,13 @@
             padding: 10px 20px; 
             text-align: center; 
             text-decoration: none; 
-            display: inline-block; 
+            display: flex;
             font-size: 16px; 
             margin: 4px 2px; 
+            margin-left: 5px;
             transition-duration: 0.4s; 
             cursor: pointer; 
+            position: relative;
         }
 
         .login-button { 
@@ -45,12 +48,13 @@
             padding: 10px 20px; 
             text-align: center; 
             text-decoration: none; 
-            display: inline-block; 
+            display: flex; 
             font-size: 16px; 
             margin: 4px 2px; 
             transition-duration: 0.4s; 
             cursor: pointer; 
-            margin-left: 930px;
+            margin-left: 65%;
+            position: relative;
         }
 
         .logout-button { 
@@ -80,7 +84,7 @@
         }
 
         main {
-            max-width: 800px;
+            max-width: 70%;
             margin: 0 auto;
             padding: 20px;
         }
